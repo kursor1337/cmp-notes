@@ -1,0 +1,138 @@
+<svg width="360px" height="332px"
+ viewBox="0.00 0.00 360.22 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 328.0)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-328 356.22,-328 356.22,4 -4,4"/>
+<!-- board -->
+<g id="node1" class="node">
+<title>board</title>
+<ellipse fill="none" stroke="black" cx="107.49" cy="-234" rx="33.05" ry="18"/>
+<text text-anchor="middle" x="107.49" y="-229.8" font-family="Times,serif" font-size="14.00">board</text>
+</g>
+<!-- core -->
+<g id="node2" class="node">
+<title>core</title>
+<ellipse fill="none" stroke="black" cx="232.49" cy="-18" rx="27.81" ry="18"/>
+<text text-anchor="middle" x="232.49" y="-13.8" font-family="Times,serif" font-size="14.00">core</text>
+</g>
+<!-- board&#45;&gt;core -->
+<g id="edge1" class="edge">
+<title>board&#45;&gt;core</title>
+<path fill="none" stroke="black" d="M104.75,-215.89C100.65,-184.32 96.44,-116.1 127.49,-72 143.85,-48.77 173.44,-35.14 197.05,-27.53"/>
+<polygon fill="black" stroke="black" points="198.17,-30.85 206.74,-24.63 196.16,-24.14 198.17,-30.85"/>
+</g>
+<!-- division -->
+<g id="node3" class="node">
+<title>division</title>
+<ellipse fill="none" stroke="black" cx="178.49" cy="-90" rx="42.31" ry="18"/>
+<text text-anchor="middle" x="178.49" y="-85.8" font-family="Times,serif" font-size="14.00">division</text>
+</g>
+<!-- board&#45;&gt;division -->
+<g id="edge2" class="edge">
+<title>board&#45;&gt;division</title>
+<path fill="none" stroke="black" d="M115.78,-216.43C128,-191.98 150.99,-146 165.48,-117.02"/>
+<polygon fill="black" stroke="black" points="168.7,-118.41 170.04,-107.9 162.44,-115.28 168.7,-118.41"/>
+</g>
+<!-- division&#45;&gt;core -->
+<g id="edge3" class="edge">
+<title>division&#45;&gt;core</title>
+<path fill="none" stroke="black" d="M191.02,-72.76C197.93,-63.8 206.64,-52.51 214.29,-42.59"/>
+<polygon fill="black" stroke="black" points="217.07,-44.72 220.41,-34.67 211.53,-40.45 217.07,-44.72"/>
+</g>
+<!-- game -->
+<g id="node4" class="node">
+<title>game</title>
+<ellipse fill="none" stroke="black" cx="168.49" cy="-306" rx="31.9" ry="18"/>
+<text text-anchor="middle" x="168.49" y="-301.8" font-family="Times,serif" font-size="14.00">game</text>
+</g>
+<!-- game&#45;&gt;board -->
+<g id="edge4" class="edge">
+<title>game&#45;&gt;board</title>
+<path fill="none" stroke="black" d="M154.95,-289.46C146.98,-280.31 136.73,-268.55 127.8,-258.31"/>
+<polygon fill="black" stroke="black" points="130.2,-255.73 120.99,-250.49 124.92,-260.33 130.2,-255.73"/>
+</g>
+<!-- game&#45;&gt;core -->
+<g id="edge5" class="edge">
+<title>game&#45;&gt;core</title>
+<path fill="none" stroke="black" d="M197.68,-298.43C225.87,-290.93 268.57,-276.44 298.49,-252 328.28,-227.67 335.35,-216.81 346.49,-180 361.04,-131.96 346.23,-110.04 313.49,-72 299.84,-56.13 280.3,-43.16 263.83,-34.02"/>
+<polygon fill="black" stroke="black" points="265.03,-30.69 254.56,-29.09 261.74,-36.88 265.03,-30.69"/>
+</g>
+<!-- game&#45;&gt;division -->
+<g id="edge6" class="edge">
+<title>game&#45;&gt;division</title>
+<path fill="none" stroke="black" d="M169.29,-287.85C171.02,-250.83 175.12,-163.18 177.21,-118.39"/>
+<polygon fill="black" stroke="black" points="180.72,-118.38 177.69,-108.23 173.72,-118.06 180.72,-118.38"/>
+</g>
+<!-- move -->
+<g id="node5" class="node">
+<title>move</title>
+<ellipse fill="none" stroke="black" cx="32.49" cy="-162" rx="32.48" ry="18"/>
+<text text-anchor="middle" x="32.49" y="-157.8" font-family="Times,serif" font-size="14.00">move</text>
+</g>
+<!-- game&#45;&gt;move -->
+<g id="edge7" class="edge">
+<title>game&#45;&gt;move</title>
+<path fill="none" stroke="black" d="M140.43,-296.87C117.43,-288.89 85.5,-274.57 65.49,-252 50,-234.52 41.54,-209.11 37.08,-189.91"/>
+<polygon fill="black" stroke="black" points="40.48,-189.04 35,-179.98 33.63,-190.48 40.48,-189.04"/>
+</g>
+<!-- player -->
+<g id="node6" class="node">
+<title>player</title>
+<ellipse fill="none" stroke="black" cx="254.49" cy="-234" rx="35.33" ry="18"/>
+<text text-anchor="middle" x="254.49" y="-229.8" font-family="Times,serif" font-size="14.00">player</text>
+</g>
+<!-- game&#45;&gt;player -->
+<g id="edge8" class="edge">
+<title>game&#45;&gt;player</title>
+<path fill="none" stroke="black" d="M185.9,-290.83C198.2,-280.82 214.91,-267.22 228.76,-255.95"/>
+<polygon fill="black" stroke="black" points="230.98,-258.65 236.52,-249.63 226.56,-253.22 230.98,-258.65"/>
+</g>
+<!-- move&#45;&gt;core -->
+<g id="edge9" class="edge">
+<title>move&#45;&gt;core</title>
+<path fill="none" stroke="black" d="M37,-144.16C43.18,-124.24 56.12,-91.33 78.49,-72 111.84,-43.18 161.67,-29.81 195.55,-23.76"/>
+<polygon fill="black" stroke="black" points="196.22,-27.19 205.52,-22.1 195.08,-20.29 196.22,-27.19"/>
+</g>
+<!-- move&#45;&gt;division -->
+<g id="edge10" class="edge">
+<title>move&#45;&gt;division</title>
+<path fill="none" stroke="black" d="M56.27,-149.6C79.62,-138.4 115.54,-121.18 142.41,-108.3"/>
+<polygon fill="black" stroke="black" points="143.99,-111.42 151.49,-103.94 140.96,-105.11 143.99,-111.42"/>
+</g>
+<!-- player&#45;&gt;core -->
+<g id="edge11" class="edge">
+<title>player&#45;&gt;core</title>
+<path fill="none" stroke="black" d="M281.16,-222.05C298.37,-213.41 319.37,-199.54 329.49,-180 336.85,-165.79 334.68,-159.14 329.49,-144 315.02,-101.74 279.79,-62.73 256.02,-39.89"/>
+<polygon fill="black" stroke="black" points="258.13,-37.08 248.44,-32.79 253.34,-42.18 258.13,-37.08"/>
+</g>
+<!-- player&#45;&gt;division -->
+<g id="edge12" class="edge">
+<title>player&#45;&gt;division</title>
+<path fill="none" stroke="black" d="M245.29,-216.33C239.55,-205.9 232.05,-192.19 225.49,-180 214.11,-158.83 201.4,-134.72 192.06,-116.94"/>
+<polygon fill="black" stroke="black" points="195,-115 187.25,-107.77 188.8,-118.25 195,-115"/>
+</g>
+<!-- reserves -->
+<g id="node7" class="node">
+<title>reserves</title>
+<ellipse fill="none" stroke="black" cx="277.49" cy="-162" rx="42.83" ry="18"/>
+<text text-anchor="middle" x="277.49" y="-157.8" font-family="Times,serif" font-size="14.00">reserves</text>
+</g>
+<!-- player&#45;&gt;reserves -->
+<g id="edge13" class="edge">
+<title>player&#45;&gt;reserves</title>
+<path fill="none" stroke="black" d="M260.06,-216.05C262.65,-208.18 265.79,-198.62 268.69,-189.79"/>
+<polygon fill="black" stroke="black" points="272.02,-190.87 271.82,-180.28 265.37,-188.68 272.02,-190.87"/>
+</g>
+<!-- reserves&#45;&gt;core -->
+<g id="edge14" class="edge">
+<title>reserves&#45;&gt;core</title>
+<path fill="none" stroke="black" d="M272.06,-143.87C264.32,-119.43 250.03,-74.33 240.91,-45.55"/>
+<polygon fill="black" stroke="black" points="244.16,-44.22 237.8,-35.75 237.48,-46.34 244.16,-44.22"/>
+</g>
+<!-- reserves&#45;&gt;division -->
+<g id="edge15" class="edge">
+<title>reserves&#45;&gt;division</title>
+<path fill="none" stroke="black" d="M256.5,-146.15C242.32,-136.13 223.41,-122.76 207.77,-111.7"/>
+<polygon fill="black" stroke="black" points="209.64,-108.74 199.46,-105.82 205.6,-114.45 209.64,-108.74"/>
+</g>
+</g>
+</svg>

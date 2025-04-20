@@ -1,0 +1,9 @@
+<resources>
+    <string name="note_list_title">My notes</string>
+
+    <string name="note_details_button_edit">Edit note</string>
+
+    <string name="note_create_edit_button_save">Save note</string>
+    <string name="note_create_edit_input_title">Title</string>
+    <string name="note_create_edit_input_content">Content</string>
+</resources>

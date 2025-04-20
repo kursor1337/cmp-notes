@@ -1,0 +1,24 @@
+digraph {
+board
+core
+division
+game
+move
+player
+reserves
+board -> core
+board -> division
+division -> core
+game -> board
+game -> core
+game -> division
+game -> move
+game -> player
+move -> core
+move -> division
+player -> core
+player -> division
+player -> reserves
+reserves -> core
+reserves -> division
+}

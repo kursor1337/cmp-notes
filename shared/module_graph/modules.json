@@ -1,0 +1,102 @@
+[
+    {
+        "id": "board",
+        "path": "/board",
+        "dependency": [
+            {
+                "id": "core",
+                "path": "/core"
+            },
+            {
+                "id": "division",
+                "path": "/division"
+            }
+        ]
+    },
+    {
+        "id": "core",
+        "path": "/core"
+    },
+    {
+        "id": "division",
+        "path": "/division",
+        "dependency": [
+            {
+                "id": "core",
+                "path": "/core"
+            }
+        ]
+    },
+    {
+        "id": "game",
+        "path": "/game",
+        "dependency": [
+            {
+                "id": "board",
+                "path": "/board"
+            },
+            {
+                "id": "core",
+                "path": "/core"
+            },
+            {
+                "id": "division",
+                "path": "/division"
+            },
+            {
+                "id": "move",
+                "path": "/move"
+            },
+            {
+                "id": "player",
+                "path": "/player"
+            }
+        ]
+    },
+    {
+        "id": "move",
+        "path": "/move",
+        "dependency": [
+            {
+                "id": "core",
+                "path": "/core"
+            },
+            {
+                "id": "division",
+                "path": "/division"
+            }
+        ]
+    },
+    {
+        "id": "player",
+        "path": "/player",
+        "dependency": [
+            {
+                "id": "core",
+                "path": "/core"
+            },
+            {
+                "id": "division",
+                "path": "/division"
+            },
+            {
+                "id": "reserves",
+                "path": "/reserves"
+            }
+        ]
+    },
+    {
+        "id": "reserves",
+        "path": "/reserves",
+        "dependency": [
+            {
+                "id": "core",
+                "path": "/core"
+            },
+            {
+                "id": "division",
+                "path": "/division"
+            }
+        ]
+    }
+]
