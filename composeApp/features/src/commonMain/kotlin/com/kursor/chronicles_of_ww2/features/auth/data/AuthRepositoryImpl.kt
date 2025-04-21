@@ -3,7 +3,6 @@ package com.kursor.chronicles_of_ww2.features.auth.data
 import com.kursor.chronicles_of_ww2.core.network.tokens.AccessToken
 import com.kursor.chronicles_of_ww2.core.network.tokens.AuthTokens
 import com.kursor.chronicles_of_ww2.core.network.tokens.RefreshToken
-import com.kursor.chronicles_of_ww2.core.network.tokens.TokenProvider
 import com.kursor.chronicles_of_ww2.core.network.tokens.TokenRefresher
 import com.kursor.chronicles_of_ww2.dto.auth.RefreshTokensRequest
 import com.kursor.chronicles_of_ww2.dto.auth.SignInRequest
@@ -31,7 +30,6 @@ class AuthRepositoryImpl(
         } catch (e: Exception) {
             SignInResult.Error(e.message ?: "Unknown error")
         }
-
     }
 
     override suspend fun signUp(login: String, password: String): SignUpResult {

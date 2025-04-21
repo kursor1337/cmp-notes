@@ -3,7 +3,6 @@ package com.kursor.chronicles_of_ww2.features.notes.presentation.create_edit
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import ru.mobileup.kmm_form_validation.control.InputControl
 
 @OptIn(DelicateCoroutinesApi::class)

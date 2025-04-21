@@ -15,12 +15,9 @@ import com.kursor.chronicles_of_ww2.dto.auth.SignUpResponse
 import io.ktor.server.application.Application
 import io.ktor.server.request.receive
 import io.ktor.server.response.respond
-import io.ktor.server.routing.Route
 import io.ktor.server.routing.post
 import io.ktor.server.routing.route
 import io.ktor.server.routing.routing
-import kotlinx.serialization.SerialName
-import kotlinx.serialization.Serializable
 
 fun Application.configureAuthRouting(
     userRepository: UserRepository,

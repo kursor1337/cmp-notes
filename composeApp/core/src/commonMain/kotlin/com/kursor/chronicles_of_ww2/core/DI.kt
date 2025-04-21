@@ -7,7 +7,6 @@ import com.kursor.chronicles_of_ww2.core.message.data.MessageService
 import com.kursor.chronicles_of_ww2.core.message.data.MessageServiceImpl
 import com.kursor.chronicles_of_ww2.core.network.BackendUrl
 import com.kursor.chronicles_of_ww2.core.network.NetworkApiFactory
-import com.russhwolf.settings.Settings
 import me.aartikov.replica.client.ReplicaClient
 import org.koin.core.module.Module
 import org.koin.dsl.module

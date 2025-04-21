@@ -8,11 +8,8 @@ import com.kursor.chronicles_of_ww2.features.notes.domain.NoteRepository
 import me.aartikov.replica.algebra.normal.associate
 import me.aartikov.replica.algebra.normal.map
 import me.aartikov.replica.client.ReplicaClient
-import me.aartikov.replica.keyed.KeyedPhysicalReplica
 import me.aartikov.replica.keyed.KeyedReplica
-import me.aartikov.replica.keyed.KeyedReplicaSettings
 import me.aartikov.replica.single.PhysicalReplica
-import me.aartikov.replica.single.Replica
 import me.aartikov.replica.single.ReplicaSettings
 import kotlin.time.Duration.Companion.minutes
 
@@ -31,7 +28,7 @@ class NoteRepositoryImpl(
     override val noteByIdReplica: KeyedReplica<NoteId, Note> = associate { noteId ->
         noteListReplica.map { notes ->
             notes
-                .find { it.id ==  noteId}
+                .find { it.id == noteId }
                 ?: error("Note with id = ${noteId.value} not found")
         }
     }

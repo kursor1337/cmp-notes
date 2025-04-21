@@ -1,8 +1,6 @@
 package com.kursor.chronicles_of_ww2.notes.routing
 
-import com.kursor.chronicles_of_ww2.auth.domain.Login
 import com.kursor.chronicles_of_ww2.core.jwtTokenLogin
-import com.kursor.chronicles_of_ww2.core.longParameter
 import com.kursor.chronicles_of_ww2.dto.notes.CreateNoteRequest
 import com.kursor.chronicles_of_ww2.dto.notes.CreateNoteResponse
 import com.kursor.chronicles_of_ww2.dto.notes.EditNoteRequest
@@ -13,11 +11,8 @@ import com.kursor.chronicles_of_ww2.notes.domain.NoteRepository
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.Application
 import io.ktor.server.auth.authenticate
-import io.ktor.server.auth.jwt.JWTPrincipal
-import io.ktor.server.auth.principal
 import io.ktor.server.request.receive
 import io.ktor.server.response.respond
-import io.ktor.server.routing.Route
 import io.ktor.server.routing.get
 import io.ktor.server.routing.post
 import io.ktor.server.routing.route

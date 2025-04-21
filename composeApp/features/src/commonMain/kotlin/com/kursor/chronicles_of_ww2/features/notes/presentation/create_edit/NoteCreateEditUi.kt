@@ -67,5 +67,4 @@ fun NoteCreateEditUi(
     if (isSavingInProgress) {
         FullscreenCircularProgress(overlay = true)
     }
-
 }

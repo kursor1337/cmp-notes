@@ -1,7 +1,6 @@
 package com.kursor.chronicles_of_ww2.features.notes.presentation
 
 import com.arkivanov.decompose.ComponentContext
-import com.arkivanov.decompose.router.slot.childSlot
 import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.router.stack.StackNavigation
 import com.arkivanov.decompose.router.stack.childStack

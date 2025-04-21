@@ -20,7 +20,6 @@ import com.kursor.chronicles_of_ww2.features.auth.presentation.sign_up.SignUpCom
 import com.kursor.chronicles_of_ww2.features.auth.presentation.welcome.RealWelcomeComponent
 import com.kursor.chronicles_of_ww2.features.auth.presentation.welcome.WelcomeComponent
 import org.koin.core.component.get
-import org.koin.dsl.bind
 import org.koin.dsl.binds
 import org.koin.dsl.module
 

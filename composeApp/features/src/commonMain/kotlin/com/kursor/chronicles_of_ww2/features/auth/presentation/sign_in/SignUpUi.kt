@@ -18,10 +18,6 @@ import cmp_notes.composeapp.features.generated.resources.sign_in_button_sign_in
 import cmp_notes.composeapp.features.generated.resources.sign_in_input_login
 import cmp_notes.composeapp.features.generated.resources.sign_in_input_password
 import cmp_notes.composeapp.features.generated.resources.sign_in_title
-import cmp_notes.composeapp.features.generated.resources.sign_up_button_sign_up
-import cmp_notes.composeapp.features.generated.resources.sign_up_input_login
-import cmp_notes.composeapp.features.generated.resources.sign_up_input_password
-import cmp_notes.composeapp.features.generated.resources.sign_up_title
 import com.kursor.chronicles_of_ww2.core.theme.custom.CustomTheme
 import com.kursor.chronicles_of_ww2.core.widget.AppToolbar
 import com.kursor.chronicles_of_ww2.core.widget.BackButton

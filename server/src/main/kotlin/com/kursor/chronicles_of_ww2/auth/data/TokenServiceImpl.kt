@@ -1,7 +1,6 @@
 package com.kursor.chronicles_of_ww2.auth.data
 
 import com.auth0.jwt.JWT
-import com.auth0.jwt.JWTVerifier
 import com.auth0.jwt.algorithms.Algorithm
 import com.kursor.chronicles_of_ww2.auth.domain.AccessToken
 import com.kursor.chronicles_of_ww2.auth.domain.AuthTokens
@@ -9,7 +8,6 @@ import com.kursor.chronicles_of_ww2.auth.domain.Login
 import com.kursor.chronicles_of_ww2.auth.domain.RefreshToken
 import com.kursor.chronicles_of_ww2.auth.domain.TokenService
 import com.kursor.chronicles_of_ww2.core.JwtSecret
-import org.h2.command.Token
 import java.util.Date
 import kotlin.time.Duration.Companion.days
 import kotlin.time.Duration.Companion.minutes

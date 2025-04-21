@@ -1,7 +1,6 @@
 package com.kursor.chronicles_of_ww2.features.root.presentation
 
 import com.arkivanov.decompose.router.stack.ChildStack
-import com.arkivanov.essenty.backhandler.BackHandlerOwner
 import com.kursor.chronicles_of_ww2.core.message.presentation.MessageComponent
 import com.kursor.chronicles_of_ww2.core.utils.PredictiveBackComponent
 import com.kursor.chronicles_of_ww2.features.auth.presentation.AuthComponent

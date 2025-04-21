@@ -4,7 +4,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import cmp_notes.composeapp.core.generated.resources.Merriweather_24pt_Black
 import cmp_notes.composeapp.core.generated.resources.Merriweather_24pt_Bold
@@ -31,7 +30,6 @@ val merriweatherFontFamily: FontFamily
         Font(Res.font.Merriweather_24pt_Bold, FontWeight.Bold),
         Font(Res.font.Merriweather_24pt_Black, FontWeight.Black),
     )
-
 
 val AppTypography: CustomTypography
     @Composable

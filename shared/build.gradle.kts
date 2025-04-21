@@ -12,6 +12,7 @@ plugins {
     alias(libs.plugins.kotlin.serialization)
 }
 
+
 kotlin {
     
     androidTarget {
@@ -24,6 +25,8 @@ kotlin {
     iosX64()
     iosArm64()
     iosSimulatorArm64()
+
+    jvm()
     
     sourceSets {
         commonMain.dependencies {

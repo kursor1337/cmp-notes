@@ -4,11 +4,14 @@ import com.kursor.chronicles_of_ww2.auth.data.UserService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.serialization.Serializable
 import org.jetbrains.exposed.dao.id.LongIdTable
-import org.jetbrains.exposed.sql.*
-import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
+import org.jetbrains.exposed.sql.Database
+import org.jetbrains.exposed.sql.SchemaUtils
+import org.jetbrains.exposed.sql.and
+import org.jetbrains.exposed.sql.insert
+import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransaction
 import org.jetbrains.exposed.sql.transactions.transaction
-import kotlin.math.log
+import org.jetbrains.exposed.sql.update
 
 @Serializable
 class NoteEntity(
@@ -56,7 +59,7 @@ class NoteService(database: Database) {
                 .where { Notes.creatorLogin eq login }
                 .map {
                     NoteEntity(
-                        id =  it[Notes.id].value,
+                        id = it[Notes.id].value,
                         title = it[Notes.title],
                         content = it[Notes.content],
                         creatorLogin = it[Notes.creatorLogin]
@@ -68,4 +71,3 @@ class NoteService(database: Database) {
     private suspend fun <T> dbQuery(block: suspend () -> T): T =
         newSuspendedTransaction(Dispatchers.IO) { block() }
 }
-

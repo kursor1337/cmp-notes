@@ -7,8 +7,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
@@ -24,10 +22,8 @@ import cmp_notes.composeapp.features.generated.resources.ic_24_arrow_forward
 import cmp_notes.composeapp.features.generated.resources.note_list_title
 import com.kursor.chronicles_of_ww2.core.theme.custom.CustomTheme
 import com.kursor.chronicles_of_ww2.core.widget.AppToolbar
-import com.kursor.chronicles_of_ww2.core.widget.LceWidget
 import com.kursor.chronicles_of_ww2.core.widget.PullRefreshLceWidget
 import com.kursor.chronicles_of_ww2.features.notes.domain.Note
-import org.jetbrains.compose.resources.imageResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 

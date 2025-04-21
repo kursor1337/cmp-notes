@@ -7,9 +7,6 @@ import com.kursor.chronicles_of_ww2.core.configuration.Configuration
 import com.kursor.chronicles_of_ww2.core.network.createOkHttpEngine
 import com.kursor.chronicles_of_ww2.core.settings.AndroidSettingsFactory
 import com.kursor.chronicles_of_ww2.core.settings.SettingsFactory
-import com.russhwolf.settings.Settings
-import com.russhwolf.settings.SharedPreferencesSettings
-import com.russhwolf.settings.coroutines.SuspendSettings
 import me.aartikov.replica.network.AndroidNetworkConnectivityProvider
 import me.aartikov.replica.network.NetworkConnectivityProvider
 import org.koin.dsl.module

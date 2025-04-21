@@ -7,11 +7,8 @@ import com.kursor.chronicles_of_ww2.core.strings.desc
 import com.kursor.chronicles_of_ww2.core.utils.InputControl
 import com.kursor.chronicles_of_ww2.core.utils.componentScope
 import com.kursor.chronicles_of_ww2.features.auth.domain.AuthRepository
-import com.kursor.chronicles_of_ww2.features.auth.domain.SignInResult
 import com.kursor.chronicles_of_ww2.features.auth.domain.SignUpResult
-import com.kursor.chronicles_of_ww2.features.auth.presentation.sign_in.SignInComponent
 import ru.mobileup.kmm_form_validation.control.InputControl
-import ru.mobileup.kmm_form_validation.options.KeyboardOptions
 import ru.mobileup.kmm_form_validation.options.PasswordVisualTransformation
 
 class RealSignUpComponent(

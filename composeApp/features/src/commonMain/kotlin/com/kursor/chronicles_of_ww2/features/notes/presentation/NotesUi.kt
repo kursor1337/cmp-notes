@@ -8,7 +8,6 @@ import com.arkivanov.decompose.ExperimentalDecomposeApi
 import com.arkivanov.decompose.extensions.compose.stack.Children
 import com.kursor.chronicles_of_ww2.core.utils.predictiveBackAnimation
 import com.kursor.chronicles_of_ww2.features.notes.presentation.create_edit.NoteCreateEditUi
-import com.kursor.chronicles_of_ww2.features.notes.presentation.details.NoteDetailsComponent
 import com.kursor.chronicles_of_ww2.features.notes.presentation.details.NoteDetailsUi
 import com.kursor.chronicles_of_ww2.features.notes.presentation.list.NoteListUi
 

@@ -6,7 +6,6 @@ import com.kursor.chronicles_of_ww2.dto.notes.NoteResponse
 import de.jensklingenberg.ktorfit.http.Body
 import de.jensklingenberg.ktorfit.http.GET
 import de.jensklingenberg.ktorfit.http.POST
-import de.jensklingenberg.ktorfit.http.Query
 
 interface NoteApi {
 

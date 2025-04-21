@@ -1,7 +1,6 @@
 package com.kursor.chronicles_of_ww2.features.notes.presentation
 
 import com.arkivanov.decompose.router.stack.ChildStack
-import com.arkivanov.essenty.backhandler.BackHandlerOwner
 import com.kursor.chronicles_of_ww2.core.utils.PredictiveBackComponent
 import com.kursor.chronicles_of_ww2.features.notes.presentation.create_edit.NoteCreateEditComponent
 import com.kursor.chronicles_of_ww2.features.notes.presentation.details.NoteDetailsComponent

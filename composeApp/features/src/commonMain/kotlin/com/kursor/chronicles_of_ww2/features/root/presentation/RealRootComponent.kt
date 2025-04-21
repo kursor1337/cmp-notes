@@ -26,7 +26,7 @@ class RealRootComponent(
 
     private val navigation = StackNavigation<ChildConfig>()
 
-    override val childStack:StateFlow<ChildStack<*, RootComponent.Child>> = childStack(
+    override val childStack: StateFlow<ChildStack<*, RootComponent.Child>> = childStack(
         source = navigation,
         initialConfiguration = runBlocking {
             if (tokenProvider.getAuthTokens() != null) {

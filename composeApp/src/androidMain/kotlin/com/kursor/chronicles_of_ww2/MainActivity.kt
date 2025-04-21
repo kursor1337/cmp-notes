@@ -9,8 +9,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.core.view.WindowCompat
-import com.arkivanov.decompose.ExperimentalDecomposeApi
 import com.arkivanov.decompose.retainedComponent
 import com.arkivanov.essenty.lifecycle.asEssentyLifecycle
 import com.arkivanov.essenty.lifecycle.doOnDestroy
