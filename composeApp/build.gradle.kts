@@ -30,6 +30,8 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
             isStatic = true
+            export(libs.decompose.core)
+            export(libs.essenty.lifecycle)
         }
     }
     
@@ -59,7 +61,7 @@ kotlin {
             implementation(libs.koin.core)
             implementation(libs.bundles.replica.common)
             implementation(libs.kermit.logger)
-            implementation(libs.decompose.core)
+            api(libs.decompose.core)
             implementation(libs.decompose.compose)
         }
         iosMain.dependencies {

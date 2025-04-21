@@ -7,17 +7,18 @@ import com.russhwolf.settings.ExperimentalSettingsApi
 import com.russhwolf.settings.SharedPreferencesSettings
 import com.russhwolf.settings.coroutines.SuspendSettings
 import com.russhwolf.settings.coroutines.toSuspendSettings
+import kotlinx.coroutines.Dispatchers
 
 class AndroidSettingsFactory(
     private val context: Context
 ) : SettingsFactory {
 
     @OptIn(ExperimentalSettingsApi::class)
-    override fun createSettings(name: String): SuspendSettings {
+    override fun createSettings(): SuspendSettings {
         return SharedPreferencesSettings(
-            delegate = context.getSharedPreferences(name, Context.MODE_PRIVATE),
+            delegate = context.getSharedPreferences("prefs", Context.MODE_PRIVATE),
             commit = true
-        ).toSuspendSettings()
+        ).toSuspendSettings(Dispatchers.IO)
     }
 
     @OptIn(ExperimentalSettingsApi::class)
@@ -25,7 +26,7 @@ class AndroidSettingsFactory(
         return SharedPreferencesSettings(
             delegate = createEncryptedSharedPreferences(context),
             commit = true
-        ).toSuspendSettings()
+        ).toSuspendSettings(Dispatchers.IO)
     }
 }
 

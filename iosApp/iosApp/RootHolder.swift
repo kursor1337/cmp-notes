@@ -2,23 +2,23 @@ import SwiftUI
 import ComposeApp
 
 final class RootHolder: ObservableObject {
-    let rootComponent: RootComponent
+    let rootComponent: FeaturesRootComponent
     
     init() {
-        let buildType: BuildType
-        let backend: Backend
+        let buildType: CoreBuildType
+        let backend: CoreBackend
         
         switch EnvironmentService.shared.currentEnvironment {
         case .debug:
             buildType = .debug
             backend = .development
         case .release:
-            buildType = .theRelease
+            buildType = .release_
             backend = .production
         }
         
-        let configuration = Configuration(
-            platform: Platform(),
+        let configuration = CoreConfiguration(
+            platform: CorePlatform(),
             buildType: buildType,
             backend: backend
         )
@@ -30,7 +30,7 @@ final class RootHolder: ObservableObject {
             lifecycle: ApplicationLifecycle(),
             stateKeeper: nil,
             instanceKeeper: nil,
-            backHandler: BackDispatcherService.shared.backDispatcher
+            backHandler: nil
         )
         
         /// Инициализация корневого компонента с использованием созданного контекста.

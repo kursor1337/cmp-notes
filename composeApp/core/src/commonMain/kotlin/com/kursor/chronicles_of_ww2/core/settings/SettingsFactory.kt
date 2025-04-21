@@ -6,7 +6,7 @@ import com.russhwolf.settings.coroutines.SuspendSettings
 @OptIn(ExperimentalSettingsApi::class)
 interface SettingsFactory {
 
-    fun createSettings(name: String): SuspendSettings
+    fun createSettings(): SuspendSettings
 
     fun createEncryptedSettings(): SuspendSettings
 }

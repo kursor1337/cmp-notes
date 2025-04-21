@@ -1,4 +1,5 @@
 import io.gitlab.arturbosch.detekt.Detekt
+import io.ktor.plugin.features.DockerImageRegistry
 import io.ktor.plugin.features.DockerPortMapping
 import io.ktor.plugin.features.DockerPortMappingProtocol
 import java.util.Properties
@@ -48,6 +49,24 @@ ktor {
                 it.key.toString(),
                 it.value.toString()
             )
+        }
+
+        externalRegistry.set(
+            DockerImageRegistry.dockerHub(
+                appName = provider { "cmp-notes" },
+                username = provider { localProperties.getProperty("DOCKER_HUB_USERNAME") },
+                password = provider { localProperties.getProperty("DOCKER_HUB_PASSWORD") }
+            )
+        )
+
+        jib {
+            from {
+                image = "openjdk:17-jdk-alpine"
+            }
+            to {
+                image = "${localProperties.getProperty("DOCKER_HUB_USERNAME")}/cmp-notes"
+                tags = setOf("${project.version}")
+            }
         }
     }
 }

@@ -5,7 +5,7 @@ struct iOSApp: App {
     @StateObject private var rootHolder = RootHolder()
     var body: some Scene {
         WindowGroup {
-            ContentView(rootHolder.rootComponent)
+            ContentView(rootComponent: rootHolder.rootComponent)
                 .environmentObject(rootHolder)
         }
     }

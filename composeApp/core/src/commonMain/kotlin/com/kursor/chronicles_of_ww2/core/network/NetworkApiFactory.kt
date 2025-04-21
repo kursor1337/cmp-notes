@@ -1,5 +1,6 @@
 package com.kursor.chronicles_of_ww2.core.network
 
+import com.arkivanov.decompose.DefaultComponentContext
 import com.kursor.chronicles_of_ww2.core.network.tokens.AuthInterceptor
 import com.kursor.chronicles_of_ww2.core.network.tokens.TokenProvider
 import com.kursor.chronicles_of_ww2.core.network.tokens.TokenRefresher
