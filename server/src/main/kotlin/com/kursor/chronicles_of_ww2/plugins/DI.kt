@@ -10,12 +10,12 @@ import io.ktor.server.application.install
 import org.koin.ktor.plugin.Koin
 import org.koin.logger.slf4jLogger
 
-fun Application.configureDI() {
+fun Application.configureDI(jwtSecret: JwtSecret) {
     install(Koin) {
         slf4jLogger()
         modules(
             coreModule(
-                jwtSecret = System.getenv("JWT_SECRET").let(::JwtSecret),
+                jwtSecret = jwtSecret,
                 databaseConfig = DatabaseConfig.Debug
             ),
             authModule,

@@ -1,5 +1,6 @@
 package com.kursor.chronicles_of_ww2
 
+import com.kursor.chronicles_of_ww2.core.JwtSecret
 import com.kursor.chronicles_of_ww2.plugins.configureDI
 import com.kursor.chronicles_of_ww2.plugins.configureErrorHandling
 import com.kursor.chronicles_of_ww2.plugins.configureLogging
@@ -16,9 +17,10 @@ fun main() {
 }
 
 fun Application.module() {
-    configureDI()
+    val jwtSecret = System.getenv("JWT_SECRET").let(::JwtSecret)
+    configureDI(jwtSecret)
     configureLogging()
-    configureSecurity()
+    configureSecurity(jwtSecret)
     configureRouting()
     configureErrorHandling()
     configureSerialization()
